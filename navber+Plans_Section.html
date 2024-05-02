@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="h-screen bg-gray-100">
+    <header class="bg-gray-200">
+        <nav class="flex justify-between items-center md:px-32 px-4 py-2">
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                <div>
+                    <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png"
+                        alt="logo">
+                </div>
+            </div>
+
+            <div
+                class="nav-links duration-500 md:static absolute md:min-h-fit md:h-1/2 h-60 md:bg-gray-200 bg-gray-100 left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ease-in-out duration-700">
+                <ul class="flex md:flex-row flex-col md:items-center gap-2 font-bold w-full">
+                    <li class="hover:bg-gray-200 block py-2 px-3 rounded-md">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="hover:bg-gray-200 block py-2 px-3 rounded-md">
+                        <a href="#">BLOG</a>
+                    </li>
+                    <li class="hover:bg-gray-200 block py-2 px-3 rounded-md">
+                        <a href="#">SERVICE</a>
+                    </li>
+                    <li class="hover:bg-gray-200 block py-2 px-3 rounded-md">
+                        <a href="#">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <div class="dropdown">
+                    <button class="dropbtn"><img class="md:h-10 h-8 px-10 duration-700"
+                            src="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-dark-theme-favico-6a6f6f67bc3e7.png"
+                            alt="profile"></button>
+                    <div class="dropdown-content">
+                        <a href="profile.html">Profile</a>
+                        <a href="#">Order</a>
+                        <a href="login.html">LogIn</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Membership Plans Section -->
+    <div class="min-h-screen flex justify-center items-center pt-8 box-border">
+        <div class="max-w-screen-xl w-full">
+            <div class="text-center font-semibold">
+                <h1 class="text-3xl">
+                    <span class="text-blue-700 tracking-wide">MEMBERSHIP</span>
+                    <span>Plans</span>
+                </h1>
+                <p class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full">
+                    FBO offers membership packages as a simple and cost-effective way to access a wide range of
+                    facilities.
+                </p>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class=" grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-8 gap-4 mt-12 ml-4 mr-4">
+                <!-- Gold Card -->
+                <div class="pricing-card bg-white text-center rounded-3xl shadow-xl p-8">
+                    <h1 class="text-black font-semibold text-xl"><i class="fas fa-star" style="color: gold;"></i> GOLD
+                    </h1>
+                    <p class="pt-2 tracking-wide">
+                        <span class="text-gray-400 align-top">$ </span>
+                        <span class="text-3xl font-semibold">00</span>
+                        <span class="text-gray-400 font-medium">/ month</span>
+                    </p>
+                    <hr class="hr mt-4 border-1">
+
+                    <div class="pt-8 ">
+                        <p class="font-semibold text-black text-left">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Private Executive offices
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Executive Lounge
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Co-Working Spaces
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Mail Box
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Virtual Office
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Kitchens
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Board Room
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Seminar Room
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Event Space
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Roof Top Terrace
+                            </span>
+                        </p>  
+                    </div>
+
+                    <a href="#" class="block w-full py-2 bg-blue-600 mt-8 rounded-xl text-white font-medium">Learn
+                        More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Silver Card -->
+                <div class="pricing-card bg-white text-center rounded-3xl shadow-xl p-8">
+                    <h1 class="text-black font-semibold text-xl"><i class="fas fa-star" style="color: silver;"></i>
+                        SILVER</h1>
+                    <p class="pt-2 tracking-wide">
+                        <span class="text-gray-400 align-top">$ </span>
+                        <span class="text-3xl font-semibold">00</span>
+                        <span class="text-gray-400 font-medium">/ month</span>
+                    </p>
+                    <hr class="mt-4 border-1">
+
+                    <div class="pt-8">
+                        <p class="font-semibold text-black text-left">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Private Executive offices
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Executive Lounge
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Co-Working Spaces
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Mail Box
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Virtual Office
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Kitchens
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Board Room
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Seminar Room
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Event Space
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Roof Top Terrace
+                            </span>
+                        </p>  
+                    </div>
+
+                    <a href="#" class="block w-full py-2 bg-blue-600 mt-8 rounded-xl text-white font-medium">Learn
+                        More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Bronze Card -->
+                <div class="pricing-card bg-white text-center rounded-3xl shadow-xl p-8">
+                    <h1 class="text-black font-semibold text-xl"><i class="fas fa-star" style="color: #cd7f32;"></i>
+                        BRONZE</h1>
+                    <p class="pt-2 tracking-wide">
+                        <span class="text-gray-400 align-top">$ </span>
+                        <span class="text-3xl font-semibold">00</span>
+                        <span class="text-gray-400 font-medium">/ month</span>
+                    </p>
+                    <hr class="mt-4 border-1">
+
+                    <div class="pt-8">
+                        <p class="font-semibold text-black text-left">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Private Executive offices
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Executive Lounge
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Co-Working Spaces
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Mail Box
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Virtual Office
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Kitchens
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Board Room
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Seminar Room
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Event Space
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Roof Top Terrace
+                            </span>
+                        </p>  
+                    </div>
+
+                    <a href="#" class="block w-full py-2 bg-blue-600 mt-8 rounded-xl text-white font-medium">Learn
+                        More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Corporate Memberships Card -->
+                <div class="pricing-card bg-white text-center rounded-3xl shadow-xl p-8">
+                    <h1 class="text-black font-semibold text-xl"><i class="fas fa-building"
+                            style="color: #007bff; font-size: 24px;"></i> CORPORATE MEMBERSHIPS</h1>
+                    <p class="pt-2 tracking-wide">
+                        <span class="text-gray-400 align-top">$ </span>
+                        <span class="text-3xl font-semibold">00</span>
+                        <span class="text-gray-400 font-medium">/ month</span>
+                    </p>
+                    <hr class="mt-4 border-1">
+
+                    <div class="lg:pt-4 pt-8 ">
+                        <p class="font-semibold text-black text-left">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Private Executive offices
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Executive Lounge
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Co-Working Spaces
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Mail Box
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-check text-green-600"></i>
+                            <span class="pl-1">
+                                Virtual Office
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-xmark text-red-600"></i>
+                            <span class="pl-1">
+                                Kitchens
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-xmark text-red-600"></i>
+                            <span class="pl-1">
+                                Board Room
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-xmark text-red-600"></i>
+                            <span class="pl-1">
+                                Seminar Room
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-xmark text-red-600"></i>
+                            <span class="pl-1">
+                                Event Space
+                            </span>
+                        </p>
+                        <p class="font-semibold text-black text-left pt-5">
+                            <i class="fa-solid fa-xmark text-red-600"></i>
+                            <span class="pl-1">
+                                Roof Top Terrace
+                            </span>
+                        </p>  
+                    </div>
+
+                    <a href="#" class="block w-full py-2 bg-blue-600 lg:mt-5 mt-8 rounded-xl text-white font-medium">Learn
+                        More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navLinks.classList.toggle('top-[7%]');
+        }
+    </script>
+</body>
+
+</html>
